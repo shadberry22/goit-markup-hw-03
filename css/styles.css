@@ -15,12 +15,44 @@ body {
   background-color: var(--main-white-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 .visually-hidden {
@@ -36,7 +68,35 @@ body {
   margin: -1px;
 }
 
+/* -----Header Positioning----- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: 93px;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+
 /* -----Header-Logo----- */
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -83,7 +143,19 @@ body {
   background-color: var(--background-dark-color);
 }
 
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-container {
+    text-align: center;
+}
+
 .hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -93,6 +165,8 @@ body {
 }
 
 .hero-button {
+  margin-top: 30px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -192,6 +266,17 @@ body {
   background-color: var(--background-dark-color);
 }
 
+/* -----Footer Positioning----- */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-list {
+  gap: 9px;
+}
+
 /* -----Footer Logo----- */
 .logo {
   color: var(--accent-color);
@@ -207,6 +292,8 @@ body {
 
 /* -----Footer Contacts----- */
 .footer-address {
+  margin-top: 20px;
+
   font-style: normal;
 }
 
