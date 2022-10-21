@@ -187,6 +187,11 @@ img {
   background-color: var(--background-blue-color);
 }
 /* -----List of Merits----- */
+.merits-list {
+  display: flex;
+
+}
+
 .merits-title {
   font-size: 14px;
   line-height: 1.14;
@@ -203,6 +208,10 @@ img {
 }
 
 /* -----What We Do----- */
+.activities-list {
+  display: flex;
+}
+
 .activities.section {
   padding-top: 0;
 }
@@ -215,6 +224,10 @@ img {
 }
 
 /* -----Our Team----- */
+.team-list {
+  display: flex;
+}
+
 .team {
   background-color: var(--background-light-color);
 }
@@ -240,8 +253,15 @@ img {
 }
 
 /* -----Portfolio Page----- */
+.filter-list {
+display: flex;
+}
+
 .portfolio-list {
   margin-top: 34px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-button {
