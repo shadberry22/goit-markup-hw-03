@@ -149,13 +149,13 @@ img {
 }
 
 .hero-container {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-title {
   max-width: 696px;
   margin: 0 auto;
-  
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -166,6 +166,11 @@ img {
 
 .hero-button {
   margin-top: 30px;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
 
   font-family: inherit;
   font-weight: 700;
@@ -198,6 +203,10 @@ img {
 }
 
 /* -----What We Do----- */
+.activities.section {
+  padding-top: 0;
+}
+
 .activities-title {
   font-size: 36px;
   line-height: 1.17;
@@ -231,6 +240,10 @@ img {
 }
 
 /* -----Portfolio Page----- */
+.portfolio-list {
+  margin-top: 34px;
+}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
