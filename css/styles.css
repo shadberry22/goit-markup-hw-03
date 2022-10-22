@@ -25,11 +25,6 @@ h6 {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
 img {
   display: block;
 }
@@ -39,12 +34,16 @@ img {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  outline: 5px dashed blue;
 }
 
 .container {
@@ -52,6 +51,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
   outline: 2px solid tomato;
 }
 
@@ -87,7 +87,7 @@ img {
 .header-list {
   display: flex;
   gap: 50px;
-}
+  }
 
 .contacts-list {
   display: flex;
@@ -140,16 +140,13 @@ img {
 
 /* -----Hero Section----- */
 .hero {
-  background-color: var(--background-dark-color);
-}
-
-.hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero-container {
   text-align: center;
+
+  background-color: var(--background-dark-color);
+
+  outline: 5px dashed blue;
 }
 
 .hero-title {
@@ -166,11 +163,12 @@ img {
 
 .hero-button {
   margin-top: 30px;
+  border: none;
 
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 216px;
+  min-width: 152px;
 
   font-family: inherit;
   font-weight: 700;
@@ -189,7 +187,6 @@ img {
 /* -----List of Merits----- */
 .merits-list {
   display: flex;
-
 }
 
 .merits-title {
@@ -254,14 +251,7 @@ img {
 
 /* -----Portfolio Page----- */
 .filter-list {
-display: flex;
-}
-
-.portfolio-list {
-  margin-top: 34px;
-
   display: flex;
-  flex-wrap: wrap;
 }
 
 .filter-button {
@@ -281,6 +271,12 @@ display: flex;
   background-color: var(--accent-color);
 }
 
+.portfolio-list {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
@@ -294,6 +290,7 @@ display: flex;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 /* -----Footer----- */
 .footer {
   background-color: var(--background-dark-color);
