@@ -1,4 +1,5 @@
 :root {
+  --main-gap: 30px;
   --main-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
@@ -27,6 +28,8 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -70,11 +73,6 @@ img {
 
 /* -----Header Positioning----- */
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -87,7 +85,7 @@ img {
 .header-list {
   display: flex;
   gap: 50px;
-  }
+}
 
 .contacts-list {
   display: flex;
@@ -112,6 +110,10 @@ img {
 /* -----Header Site Nav----- */
 .header-link,
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,8 +152,10 @@ img {
 }
 
 .hero-title {
-  max-width: 696px;
-  margin: 0 auto;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -162,13 +166,11 @@ img {
 }
 
 .hero-button {
-  margin-top: 30px;
-  border: none;
-
   display: inline-block;
   border-radius: 4px;
+  border: none;
   padding: 10px 32px;
-  min-width: 152px;
+  min-width: 227px;
 
   font-family: inherit;
   font-weight: 700;
@@ -187,9 +189,17 @@ img {
 /* -----List of Merits----- */
 .merits-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-gap);
+}
+
+.merits-item {
+  width: calc((100% - 3 * var(--main-gap)) / 4);
 }
 
 .merits-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -205,37 +215,62 @@ img {
 }
 
 /* -----What We Do----- */
-.activities-list {
-  display: flex;
-}
-
 .activities.section {
   padding-top: 0;
+  text-align: center;
 }
 
 .activities-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-gap);
+}
+
+.activities-item {
+  width: calc((100% - 2 * var(--main-gap)) / 3);
 }
 
 /* -----Our Team----- */
-.team-list {
-  display: flex;
-}
-
 .team {
+  text-align: center;
+
   background-color: var(--background-light-color);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-gap);
+}
+
+.team-item {
+  width: calc((100% - 3 * var(--main-gap)) / 4);
+  }
+
+.card-content {
+  padding: 30px;
+  }
+
 .team-member {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
