@@ -26,6 +26,11 @@ h6 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -37,16 +42,12 @@ img {
 }
 
 .list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 5px dashed blue;
 }
 
 .container {
@@ -54,8 +55,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid tomato;
 }
 
 .visually-hidden {
@@ -76,6 +75,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -147,8 +147,6 @@ img {
   text-align: center;
 
   background-color: var(--background-dark-color);
-
-  outline: 5px dashed blue;
 }
 
 .hero-title {
@@ -262,11 +260,11 @@ img {
 
 .team-item {
   width: calc((100% - 3 * var(--main-gap)) / 4);
-  }
+}
 
-.card-content {
+.team-item-description {
   padding: 30px;
-  }
+}
 
 .team-member {
   margin-bottom: 10px;
@@ -285,11 +283,21 @@ img {
 }
 
 /* -----Portfolio Page----- */
+
+/* -----Filter Buttons----- */
 .filter-list {
   display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -306,13 +314,39 @@ img {
   background-color: var(--accent-color);
 }
 
-.portfolio-list {
-  margin-top: 34px;
+/* -----Portfolio Items----- */
+
+/* .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: var(--main-gap);
+}
+
+.portfolio-item {
+  width: calc((100% - 2 * var(--main-gap)) / 3);
+} */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-item-description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
